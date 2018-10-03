@@ -1,0 +1,41 @@
+{
+  "Projetos-Front": [
+    {
+      "Title": "Dashboard",
+      "Link": "file:///C:/Users/lucas/Desktop/projetos/Dashboard/pages/GerenciamentoProjetos.html",
+      "Imagem": "",
+      "BgdColor": "white",
+      "ImagePosition": ""
+    },
+    {
+      "Title": "E-Commerce",
+      "Link": "",
+      "Imagem": "",
+      "BgdColor": "",
+      "ImagePosition": ""
+    },
+    {
+      "Title": "Login",
+      "Link": "",
+      "Imagem": "",
+      "BgdColor": "",
+      "ImagePosition": ""
+    }
+  ],
+  "Projetos-3d": [
+    {
+      "Title": "Havu",
+      "Link": "https://www.behance.net/gallery/69174021/Havu",
+      "Imagem": "../images/havu1.png",
+      "BgdColor": "#303030",
+      "ImagePosition": "1px 36px"
+    },
+    {
+      "Title": "Frank",
+      "Link": "https://www.behance.net/gallery/69986097/Frank",
+      "Imagem": "../images/frank.png",
+      "BgdColor": "#303030",
+      "ImagePosition": "1px 8px"
+    }
+  ]
+}

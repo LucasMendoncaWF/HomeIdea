@@ -1,13 +1,21 @@
 body {
   background-color: #f9f9fb; }
   body .main {
-    width: 50%;
+    width: 1000px;
+    min-height: 900px;
     min-height: -webkit-fill-available;
     position: absolute;
-    right: 25%;
+    right: calc(50% - 500px);
     top: 0;
-    background-color: #fff; }
+    background-color: #ffffff; }
+    body .main .home-title {
+      font-size: 24px;
+      font-family: "Segoe UI";
+      color: #666666;
+      text-align: center;
+      padding: 20px; }
     body .main .navbar {
+      padding: 10px;
       list-style: none;
       display: flex;
       justify-content: center;
@@ -15,17 +23,17 @@ body {
       body .main .navbar .li-bar {
         padding: 10px;
         color: #808080;
-        font-family: 'Segoe UI';
+        font-family: "Segoe UI";
         cursor: pointer; }
         body .main .navbar .li-bar:hover {
           border-bottom: 2px solid #eae7e7;
-          color: #c5c5c5; }
+          color: #d8d8d8; }
       body .main .navbar .li-selected {
         border-bottom: 2px solid #eae7e7;
-        color: #c5c5c5; }
+        color: #d8d8d8; }
     body .main .projetos .projeto-container {
       padding: 10px;
-      margin: 38px;
+      margin: 45px;
       width: 200px;
       height: 200px;
       position: relative; }
@@ -38,8 +46,11 @@ body {
           width: calc(91% - 20px);
           height: calc(91% - 20px);
           margin: 10px;
-          background-color: #fff;
-          position: absolute; }
+          background-color: #ffffff;
+          position: absolute;
+          background-size: 100%;
+          background-position: 1px 36px;
+          background-repeat: no-repeat; }
       body .main .projetos .projeto-container:hover .projeto {
         position: absolute;
         width: 240px;
@@ -56,20 +67,170 @@ body {
       display: flex;
       flex-wrap: wrap;
       max-height: 600px;
-      overflow: auto; }
+      overflow: auto;
+      transition: 0.9s; }
+    body .main #contato-form {
+      justify-content: center; }
+      body .main #contato-form #form {
+        width: 60%; }
+        body .main #contato-form #form .form-title {
+          color: #aeaeb3;
+          font-family: "Segoe UI";
+          font-size: 18px;
+          text-align: center; }
+        body .main #contato-form #form .form-title-line {
+          border-color: #f1f1f2;
+          margin-bottom: 50px;
+          width: 40%; }
+        body .main #contato-form #form .campo-form {
+          width: 100%;
+          margin-bottom: 20px; }
+          body .main #contato-form #form .campo-form label {
+            font-family: "Segoe UI";
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: #9e9a9a; }
+          body .main #contato-form #form .campo-form textarea {
+            width: 98%;
+            resize: none;
+            font-size: 16px;
+            padding: 5px;
+            color: #868282;
+            border-radius: 2px;
+            font-family: "Segoe UI"; }
+          body .main #contato-form #form .campo-form input[type=text], body .main #contato-form #form .campo-form input[type=email] {
+            width: 98%;
+            font-size: 16px;
+            padding: 5px;
+            color: #868282;
+            font-family: "Segoe UI";
+            border-radius: 2px; }
+          body .main #contato-form #form .campo-form .campo {
+            border: 1px solid #d8d8d8; }
+          body .main #contato-form #form .campo-form .required {
+            border: 1px solid red; }
+          body .main #contato-form #form .campo-form .enviar-mensagem {
+            background: #ffffff;
+            border: 1px solid #d8d8d8;
+            padding: 8px;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+            color: #9e9a9a; }
+            body .main #contato-form #form .campo-form .enviar-mensagem:hover {
+              background-color: #f1f1f2; }
+          body .main #contato-form #form .campo-form .botao-bloqueado {
+            cursor: not-allowed;
+            background-color: #d8d8d8; }
+      body .main #contato-form .social-media {
+        width: 60%;
+        display: flex; }
+        body .main #contato-form .social-media #behance, body .main #contato-form .social-media #linkedin {
+          width: 40px;
+          height: 40px;
+          margin: 1px;
+          cursor: pointer;
+          background-size: 100% 100%;
+          border: 1px solid #ffffff; }
+          body .main #contato-form .social-media #behance:hover, body .main #contato-form .social-media #linkedin:hover {
+            border: 1px solid #d8d8d8; }
+        body .main #contato-form .social-media #behance {
+          background-image: url("../../images/behance.png");
+          opacity: 0.5; }
+        body .main #contato-form .social-media #linkedin {
+          background-image: url("../../images/linkedin.png"); }
+    body .main footer {
+      position: absolute;
+      bottom: 0px;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      font-family: "Segoe UI";
+      color: #9e9a9a; }
+  body .popup-send {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none; }
+    body .popup-send .popup-send-front {
+      padding: 20px;
+      font-family: "Segoe UI";
+      width: 400px;
+      left: calc(50% - 200px);
+      min-height: 150px;
+      background-color: white;
+      box-shadow: 1px 1px 20px 20px #989898;
+      top: 20%;
+      position: absolute;
+      z-index: 99999; }
+      body .popup-send .popup-send-front .popup-title {
+        font-size: 24px;
+        color: #9e9a9a; }
+      body .popup-send .popup-send-front .popup-body {
+        font-size: 20px;
+        color: #9e9a9a; }
+      body .popup-send .popup-send-front .popup-success {
+        display: none; }
+        body .popup-send .popup-send-front .popup-success .button-popup-ok {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          background-color: #ffffff;
+          border: 1px solid #d8d8d8;
+          width: 50px;
+          height: 30px;
+          cursor: pointer;
+          color: #9e9a9a; }
+          body .popup-send .popup-send-front .popup-success .button-popup-ok:hover {
+            background-color: #f1f1f2; }
+      body .popup-send .popup-send-front .popup-loading .loading {
+        display: flex;
+        justify-content: center; }
+        body .popup-send .popup-send-front .popup-loading .loading .loader {
+          color: #d8d8d8;
+          font-size: 50px;
+          text-indent: -9999em;
+          overflow: hidden;
+          width: 1em;
+          height: 1em;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          animation: load 1.7s infinite ease, round 1.7s infinite ease; }
 
-/* width */
+@keyframes load {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  5%, 95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; }
+  10%, 59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em; }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em; }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em; }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em; } }
+
+@keyframes round {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 ::-webkit-scrollbar {
-  width: 10px; }
+  width: 8px; }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; }
+  background: #f1f1f2; }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; }
+  background: #a7a6a6; }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; }
