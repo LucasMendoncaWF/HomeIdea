@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Portfólio - Lucas Mendonça</title>
+  <link rel="stylesheet" type="text/css" href="styles/home.min.css" />
+</head>
+<body>
+  <div class="main">
+    <div class="home-title">Lucas Mendonça - Portfólio</div>
+    <ul class="navbar">
+      <li id="li-front" class="li-bar li-selected" onclick="selectAba('front')">Front-End</li>
+      <li id="li-3d" class="li-bar" onclick="selectAba('3d')">Modelagem 3D</li>
+      <li id="li-contato" class="li-bar" onclick="selectAba('contato')">Contato</li>
+    </ul>
+    <div id="projetos-front" class="projetos"></div>
+    <div id="projetos-3d" class="projetos"></div>
+    <div id="contato-form" class="projetos">
+    </div>
+    <footer>lucasmendoncawf@gmail.com - 2018</footer>
+  </div>
+  <div class="popup-send">
+    <div class="popup-send-front">
+      <div class="popup-loading">
+        <div class="popup-title">Enviando e-mail...</div>
+        <hr />
+        <div class="loading"><div class="loader"></div></div>
+      </div>
+      <div class="popup-success">
+        <div class="popup-title">E-mail enviado!</div>
+        <hr />
+        <div class="popup-body">Obrigado pela mensagem!<br /> Entrarei em contato em breve.</div>
+        <div><button class="button-popup-ok">OK</button></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="plugins/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/home.min.js"></script>
+</body>
+</html>
