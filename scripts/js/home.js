@@ -16,8 +16,7 @@ $.ajax({
             projetos3D += "<div class='projeto-container'  title='" + projeto3D.Title + "'  onclick=\"window.open('" + projeto3D.Link + "', '_blank');\"><div class='projeto'><div class='imagem-projeto' style=\"background-image:url('" + projeto3D.Imagem + "'); background-color:" + projeto3D.BgdColor + "; background-position: " + projeto3D.ImagePosition + "; \"></div></div></div>";
         }
         projeto3dDiv.append(projetos3D);
-        var htmlform = "<div id=\"form\">\n        <div class=\"form-title\">Entre em contato comigo, me mande uma mensagem.</div>\n        <hr class=\"form-title-line\" />\n        <div class=\"campo-form\">\n          <label for=\"email-form\">E-mail</label>\n          <input maxlength=\"120\" type=\"email\" class=\"campo\" id=\"email-form\" required />\n        </div>\n        <div class=\"campo-form\">\n          <label for=\"assunto-form\">Assunto</label>\n          <input maxlength=\"120\" type=\"text\" class=\"campo\" id=\"assunto-form\" required />\n        </div>\n        <div class=\"campo-form\">\n          <label for=\"mensagem-form\">Mensagem</label>\n          <textarea maxlength=\"500\" class=\"campo\" rows=\"8\" id=\"mensagem-form\" required></textarea>\n        </div>\n        <div class=\"campo-form botao-enviar\">\n          <button type=\"button\" class=\"enviar-mensagem\">Enviar Mensagem</button>\n        </div>\n      </div>\n      <div class=\"social-media\">\n        <div onclick=\"window.open('https://www.behance.net/lucasmendo0fcf', '_blank');\" id=\"behance\"></div>\n        <div onclick=\"window.open('https://www.linkedin.com/in/lucasmendoncap/', '_blank');\" id=\"linkedin\"></div>\n      </div>";
-        $('#contato-form').append(htmlform);
+        $('#form').show();
         $('body').click(function () {
             $('#email-form, #assunto-form, #mensagem-form').removeClass('required');
         });

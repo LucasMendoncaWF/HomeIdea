@@ -76,7 +76,8 @@ body {
     body .main #contato-form {
       justify-content: center; }
       body .main #contato-form #form {
-        width: 60%; }
+        width: 60%;
+        display: none; }
         body .main #contato-form #form .form-title {
           color: #aeaeb3;
           font-family: "Segoe UI";

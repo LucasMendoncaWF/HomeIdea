@@ -18,31 +18,7 @@ $.ajax({
     }
     projeto3dDiv.append(projetos3D);
 
-    let htmlform = `<div id="form">
-        <div class="form-title">Entre em contato comigo, me mande uma mensagem.</div>
-        <hr class="form-title-line" />
-        <div class="campo-form">
-          <label for="email-form">E-mail</label>
-          <input maxlength="120" type="email" class="campo" id="email-form" required />
-        </div>
-        <div class="campo-form">
-          <label for="assunto-form">Assunto</label>
-          <input maxlength="120" type="text" class="campo" id="assunto-form" required />
-        </div>
-        <div class="campo-form">
-          <label for="mensagem-form">Mensagem</label>
-          <textarea maxlength="500" class="campo" rows="8" id="mensagem-form" required></textarea>
-        </div>
-        <div class="campo-form botao-enviar">
-          <button type="button" class="enviar-mensagem">Enviar Mensagem</button>
-        </div>
-      </div>
-      <div class="social-media">
-        <div onclick="window.open('https://www.behance.net/lucasmendo0fcf', '_blank');" id="behance"></div>
-        <div onclick="window.open('https://www.linkedin.com/in/lucasmendoncap/', '_blank');" id="linkedin"></div>
-      </div>`;
-
-    $('#contato-form').append(htmlform);
+    $('#form').show();
 
     $('body').click(function () {
       $('#email-form, #assunto-form, #mensagem-form').removeClass('required');
