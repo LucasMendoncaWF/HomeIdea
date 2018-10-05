@@ -153,20 +153,23 @@ body {
       body .main #contato-form .social-media {
         width: 60%;
         display: flex; }
-        body .main #contato-form .social-media #behance, body .main #contato-form .social-media #linkedin {
+        body .main #contato-form .social-media #behance, body .main #contato-form .social-media #linkedin, body .main #contato-form .social-media #github {
           width: 40px;
           height: 40px;
           margin: 1px;
           cursor: pointer;
           background-size: 100% 100%;
           border: 1px solid #ffffff; }
-          body .main #contato-form .social-media #behance:hover, body .main #contato-form .social-media #linkedin:hover {
+          body .main #contato-form .social-media #behance:hover, body .main #contato-form .social-media #linkedin:hover, body .main #contato-form .social-media #github:hover {
             border: 1px solid #d8d8d8; }
         body .main #contato-form .social-media #behance {
           background-image: url("../../images/behance.png");
           opacity: 0.5; }
         body .main #contato-form .social-media #linkedin {
           background-image: url("../../images/linkedin.png"); }
+        body .main #contato-form .social-media #github {
+          background-image: url("../../images/githubIcon.png");
+          opacity: 0.3; }
     body .main footer {
       position: absolute;
       bottom: 0px;

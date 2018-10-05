@@ -221,7 +221,7 @@ body {
         width: 60%;
         display: flex;
 
-        #behance, #linkedin {
+        #behance, #linkedin, #github {
           width: 40px;
           height: 40px;
           margin: 1px;
@@ -241,6 +241,11 @@ body {
 
         #linkedin {
           background-image: url("../../images/linkedin.png");
+        }
+
+        #github {
+          background-image: url("../../images/githubIcon.png");
+          opacity: 0.3;
         }
       }
     }
