@@ -6,7 +6,7 @@ let projetos3D = '';
 let projeto3dDiv = $('#projetos-3d');
 
 $.ajax({
-  url: "http://lucasmendoncaportfolio.atwebpages.com/json/projetosHome.json", success: function (projetos) {
+  url: "http://lucasmendoncapportfolio.atwebpages.com/json/projetosHome.json", success: function (projetos) {
     let todosProjetos = JSON.parse(projetos);
     for (let projeto of todosProjetos["Projetos-Front"]) {
       projetosFront += `<div class='projeto-container' title='${projeto.Title}' onclick="window.open('${projeto.Link}', '_blank');"><div class='projeto'><div class='imagem-projeto' style="background-image:url('${projeto.Imagem}'); background-color:${projeto.BgdColor}; background-position: ${projeto.ImagePosition};"></div></div></div>`;

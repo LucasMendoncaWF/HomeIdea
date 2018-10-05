@@ -4,7 +4,7 @@ var projetosFrontDiv = $('#projetos-front');
 var projetos3D = '';
 var projeto3dDiv = $('#projetos-3d');
 $.ajax({
-    url: "http://lucasmendoncaportfolio.atwebpages.com/json/projetosHome.json", success: function (projetos) {
+    url: "http://lucasmendoncapportfolio.atwebpages.com/json/projetosHome.json", success: function (projetos) {
         var todosProjetos = JSON.parse(projetos);
         for (var _i = 0, _a = todosProjetos["Projetos-Front"]; _i < _a.length; _i++) {
             var projeto = _a[_i];
