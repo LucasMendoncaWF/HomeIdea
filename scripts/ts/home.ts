@@ -9,12 +9,12 @@ $.ajax({
   url: "http://lucasmendoncapportfolio.atwebpages.com/json/projetosHome.json", success: function (projetos) {
     let todosProjetos = JSON.parse(projetos);
     for (let projeto of todosProjetos["Projetos-Front"]) {
-      projetosFront += `<div class='projeto-container' title='${projeto.Title}' onclick="window.open('${projeto.Link}', '_blank');"><div class='projeto'><div class='imagem-projeto' style="background-image:url('${projeto.Imagem}'); background-color:${projeto.BgdColor}; background-position: ${projeto.ImagePosition};"></div></div></div>`;
+      projetosFront += `<div class='projeto-container' data-title='${projeto.Title}' onclick="window.open('${projeto.Link}');"><div class='projeto'><div class='imagem-projeto' style="background-image:url('${projeto.Imagem}'); background-color:${projeto.BgdColor}; background-position: ${projeto.ImagePosition};"></div></div></div>`;
     }
     projetosFrontDiv.append(projetosFront);
 
     for (let projeto3D of todosProjetos["Projetos-3d"]) {
-      projetos3D += `<div class='projeto-container'  title='${projeto3D.Title}'  onclick="window.open('${projeto3D.Link}', '_blank');"><div class='projeto'><div class='imagem-projeto' style="background-image:url('${projeto3D.Imagem}'); background-color:${projeto3D.BgdColor}; background-position: ${projeto3D.ImagePosition}; "></div></div></div>`;
+      projetos3D += `<div class='projeto-container'  data-title='${projeto3D.Title}'  onclick="window.open('${projeto3D.Link}');"><div class='projeto'><div class='imagem-projeto' style="background-image:url('${projeto3D.Imagem}'); background-color:${projeto3D.BgdColor}; background-position: ${projeto3D.ImagePosition}; "></div></div></div>`;
     }
     projeto3dDiv.append(projetos3D);
 
