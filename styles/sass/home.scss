@@ -111,12 +111,16 @@ body {
         }
 
         &:hover {
+          .projeto-container {
+            margin: 15px;
+          }
+
           .projeto {
             position: absolute;
-            width: 240px;
-            height: 240px;
-            top: -10px;
-            left: -10px;
+            width: 270px;
+            height: 270px;
+            top: -25px;
+            left: -25px;
             background-color: $almosWhite;
 
             .imagem-projeto {
